@@ -1,1 +1,40 @@
+Natürlich! Hier ist ein Beispielcode für einen einfachen Chatroom in HTML:
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatroom</title>
+    <style>
+        #chatbox {
+            height: 300px;
+            width: 400px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbox"></div>
+    <input type="text" id="message" placeholder="Nachricht eingeben">
+    <button onclick="sendMessage()">Senden</button>
+
+    <script>
+        function sendMessage() {
+            var message = document.getElementById("message").value;
+            var chatbox = document.getElementById("chatbox");
+            
+            if (message) {
+                var newMessage = document.createElement("p");
+                newMessage.innerText = message;
+                chatbox.appendChild(newMessage);
+                
+                document.getElementById("message").value = "";
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
+```
