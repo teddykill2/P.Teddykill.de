@@ -13,8 +13,8 @@ body {
 }
 
 button {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 75px;
     margin: 10px;
     background-color: transparent;
     border: none;
@@ -23,28 +23,33 @@ button {
 }
 
 #button1 {
-    top: 10px;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75px, -37.5px);
 }
 
 #button2 {
-    top: 10px;
-    left: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(75px, -37.5px);
 }
 
 #button3 {
-    top: 10px;
-    left: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75px, 37.5px);
 }
 
 #button4 {
-    top: 70px;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(75px, 37.5px);
 }
 
 #button5 {
-    top: 70px;
-    left: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, 0);
 }
 
 /* Füge hier weitere Stile und Informationen für deine Website hinzu */
